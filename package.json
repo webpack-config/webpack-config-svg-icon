@@ -1,0 +1,45 @@
+{
+  "name": "webpack-config-svg-icon",
+  "version": "0.1.0",
+  "author": "Neal Granger <neal@nealg.com>",
+  "main": "svg-icon.webpack.config.js",
+  "scripts": {
+    "clean": "rm *.js && rm *.js.map",
+    "prepublish": "./node_modules/.bin/babel -s -d . src",
+    "lint": "./node_modules/.bin/eslint src",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpack-config/webpack-config-svg-icon.git"
+  },
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/webpack-config/webpack-config-svg-icon/issues"
+  },
+  "homepage": "https://github.com/webpack-config/webpack-config-svg-icon#readme",
+  "dependencies": {
+    "babel-loader": "^6.4.0",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "escape-string-regexp": "^1.0.5",
+    "instrument-context-module": "^0.1.0",
+    "lodash": "^4.17.4",
+    "react-svg-loader": "^1.1.1",
+    "webpack-partial": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-metalab": "^0.2.1",
+    "eslint": "^2.10.2",
+    "eslint-config-metalab": "^4.0.1",
+    "eslint-import-resolver-babel-module": "^2.0.1",
+    "eslint-plugin-filenames": "^0.2.0",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-lodash-fp": "^1.2.0",
+    "eslint-plugin-react": "^5.1.1"
+  },
+  "peerDependencies": {
+    "webpack": "*"
+  }
+}
